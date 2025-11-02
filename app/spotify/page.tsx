@@ -1,4 +1,5 @@
 'use client'
+import { ModeToggle } from "@/components/toggletheme";
 import { useState } from "react";
 
 export default function Spotify() {
@@ -73,9 +74,15 @@ export default function Spotify() {
 
   return (
     <main className="p-8 max-w-4xl mx-auto">
+      <div className="flex justify-around ">
+
       <h1 className="text-3xl font-bold mb-4 text-center">
         Spotify → YouTube Playlist  
       </h1>
+      <div>
+        <ModeToggle/>
+      </div>
+      </div>
 
       <div className="flex gap-2 mb-6">
         <input
