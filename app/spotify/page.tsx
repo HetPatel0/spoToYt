@@ -99,7 +99,7 @@ export default function Spotify() {
           {tracks.map((t, i) => (
             <div
               key={i}
-              className="flex gap-4 items-center p-3 rounded shadow-sm border hover:border-gray-300"
+              className="flex gap-4 items-center p-3 rounded-lg shadow-sm border hover:border-gray-500"
             >
               {t.cover && (
                 <img
@@ -116,7 +116,7 @@ export default function Spotify() {
                 <button
                   onClick={() => handleOpen(t, i)}
                   disabled={searchingIndex === i}
-                  className="text-red-600 hover:text-red-700 underline text-sm mt-1 disabled:opacity-50"
+                  className="text-red-600 hover:text-red-700  text-sm mt-1 disabled:opacity-50"
                 >
                   {searchingIndex === i ? "Searching..." : "Open on YouTube"}
                 </button>
